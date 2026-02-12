@@ -16,4 +16,4 @@
 
 ## 🔥 News
 - [01/06/2026] 🔥 Our [paper](https://arxiv.org/abs/2601.01425) is released! 
-- [01/05/2026] 🔥 Our [code](https://github.com/bytedance/DreamID-V) and paper of DreamID-V is released!
+- [01/05/2026] 🔥 Our [code](https://github.com/bytedance/DreamID-V) of DreamID-V is released!
