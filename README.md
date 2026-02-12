@@ -14,7 +14,13 @@
 <img src="assets/teaser.png" width=95%>
 <p>
 
-## 🎬Demo
+## ✨ Key Features
+DreamID-Omni is a unified framework designed for high-fidelity human-centric generation. It seamlessly integrates three core capabilities into a single model:
+- **R2AV (Generation):** Generate synchronized video and audio from reference images and voice timbres.
+- **RV2AV (Editing):** Edit the identity and voice of a source video based on reference images and voice timbres.
+- **RA2V (Animation):** Animate a reference identity driven by audio input with precise lip-sync.
+
+## 🎬 Demo
 <div align="center">
   <video src="https://github.com/user-attachments/assets/21dda629-aee0-4c9e-b1ae-09552880a336" width="70%" poster=""> </video>
 </div>
