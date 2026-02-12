@@ -16,7 +16,7 @@
 
 ## 🎬Demo
 <div align="center">
-  <video src="https://gist.github.com/user-attachments/assets/cee573cc-56ce-4987-beef-0b374e1ed3b7" width="70%" poster=""> </video>
+  <video src="https://github.com/user-attachments/assets/21dda629-aee0-4c9e-b1ae-09552880a336" width="70%" poster=""> </video>
 </div>
 
 ## 🚀 Code Release
