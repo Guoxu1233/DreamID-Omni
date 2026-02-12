@@ -14,9 +14,16 @@
 <img src="assets/teaser.png" width=95%>
 <p>
 
+## 🎬Demo
+<div align="center">
+  <video src="https://gist.github.com/user-attachments/assets/cee573cc-56ce-4987-beef-0b374e1ed3b7" width="70%" poster=""> </video>
+</div>
+
+## 🚀 Code Release
+We are currently making final preparations for the open-source release. Pending internal company approval, we aim to release the **v1 version in March**. Please stay tuned!
+
 ## 🔥 News
 - [02/14/2026] 🔥 Our [paper](https://arxiv.org/abs/2601.01425) is released!
 - [01/05/2026] 🔥 The code for our previous work, [DreamID-V](https://github.com/bytedance/DreamID-V), has been released!
-## 🚀 Code Release
-We are currently making final preparations for the open-source release. Pending internal company approval, we aim to release the **v1 version in March**. Please stay tuned!
+
 
