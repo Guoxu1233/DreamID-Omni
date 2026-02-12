@@ -304,36 +304,50 @@
             margin: 0;
         }
 
-
         #intro {
+            /* 保持你原有的 padding 等设置 */
             padding: 100px 0 0px 0;
-            justify-content: center; /* Center content vertically */
-            text-align: center; /* Center text alignment */
-            /* background-image: url('./assets/background.png'); */
-            background-size: cover; /* Cover the entire container */
-            background-position: center; /* Center the background image */
-            color: #ffffff; /* Ensure text color is readable */
-            position: relative; /* 新增：作为视频背景的定位容器 */
-            overflow: hidden; /* 新增：隐藏超出容器的视频部分 */
-            min-height: 100vh; /* 新增：确保有足够高度显示内容 */
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+            /* 关键设置 */
+            position: relative; 
+            overflow: hidden; 
+            width: 100%;
+            min-height: 100vh; /* 确保至少占满一屏高度 */
         }
-
-        /* 新增：视频背景样式 */
+        /* 2. 背景容器：强制铺满 */
         .video-background {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 0; /* 置于内容下方 */
+            z-index: 0; /* 在内容之下 */
+            overflow: hidden; /* 防止视频溢出导致滚动条 */
         }
-        
+        /* 3. 视频本体：强制覆盖，允许裁剪 */
         .video-background video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* 保持比例填充容器 */
-            opacity: 0.3; /* 适当降低透明度，增强文字可读性 */
+            /* 强制定位到左上角 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* 核心技巧：使用 min-width/min-height 配合 transform */
+            /* 这能保证视频永远至少和容器一样宽/高 */
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            /* 居中并裁剪 */
+            transform: translate(-50%, -50%);
+            /* 备用方案：object-fit (现代浏览器主要靠这个，上面的 min-width 是为了兼容性) */
+            object-fit: cover; 
+            opacity: 0.3; /* 保持你的透明度设置 */
+            z-index: -1;
         }
+
+
+
         
         #intro .content {
             position: relative;
@@ -836,7 +850,7 @@
 
     <div class="video-container">
         <video controls>
-            <source src="./assets/background.mp4" type="video/mp4">
+            <source src="./assets/all.mp4" type="video/mp4">
         </video>
     </div>
 
@@ -845,7 +859,7 @@
           Human-Reference  Audio-Video Generation (R2AV)
         </div>
         <div class="description">
-            <em><strong>Please turn on the sound for watching. Hover over the video to reveal the text prompt.</strong></em>
+            Given reference images and voice timbres, generate synchronized video and audio content. <em><strong>Please turn on the sound for watching. Hover over the video to reveal the text prompt.</strong></em>
         </div>
         
         <div class="flex flex-dynamic">
@@ -1214,7 +1228,7 @@
       </div>
 
       <div class="description">
-        <em><strong>Please turn on the sound for watching. Hover over the video to reveal the text prompt.</strong></em>
+        Edit the identity and voice in a source video based on reference images and timbres. <em><strong>Please turn on the sound for watching. Hover over the video to reveal the text prompt.</strong></em>
       </div>
 
       <div class="flex flex-dynamic">
@@ -1426,7 +1440,7 @@
         </div>
 
         <div class="description">
-            <em><strong>Please turn on the sound for watching. Hover over the video to reveal the text prompt.</strong></em>
+            Given a reference image and driving audio, generate synchronized video animation. <em><strong>Please turn on the sound for watching. Hover over the video to reveal the text prompt.</strong></em>
         </div>
 
         <div class="flex flex-dynamic">
