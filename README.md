@@ -29,7 +29,7 @@ DreamID-Omni is a unified framework designed for high-fidelity human-centric gen
 We are currently making final preparations for the open-source release. Pending internal company approval, we aim to release the **v1 version in March**. Please stay tuned!
 
 ## 🔥 News
-- [02/14/2026] 🔥 Our [paper](https://arxiv.org/abs/2602.12160) is released!
+- [02/13/2026] 🔥 Our [paper](https://arxiv.org/abs/2602.12160) is released!
 - [01/05/2026] 🔥 The code for our previous work, [DreamID-V](https://github.com/bytedance/DreamID-V), has been released!
 
 
