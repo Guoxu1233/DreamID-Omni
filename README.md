@@ -1,5 +1,6 @@
 # DreamID-Omni: Unified Framework for Controllable Human-Centric Audio-Video Generation
-
+> [!NOTE]
+> This repository is forked from the `omni` branch of **[DreamID-V](https://github.com/bytedance/DreamID-V)**.
 <p align="center">
   <a href="https://guoxu1233.github.io/DreamID-Omni/">🌐 Project Page</a> |
   <a href="https://arxiv.org/abs/2602.12160">📜 Arxiv</a> |
