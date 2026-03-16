@@ -17,7 +17,7 @@
 <p>
 
 ## 🔥 News
-- [03/13/2026] 🔥 Day 0 support for [vllm-omni](https://github.com/vllm-project/vllm-omni), with heartfelt gratitude to the vLLM Team for their support.!
+- [03/13/2026] 🔥 Day 0 support from [vllm-omni](https://github.com/vllm-project/vllm-omni), with heartfelt gratitude to the vLLM-omni Team for their support.!
 - [03/13/2026] 🔥 Our v1 version [code](https://github.com/Guoxu1233/DreamID-Omni) for R2AV is released!
 - [02/13/2026] 🔥 Our [paper](https://arxiv.org/abs/2602.12160) is released!
 - [01/05/2026] 🔥 The code for our previous work, [DreamID-V](https://github.com/bytedance/DreamID-V), has been released!
@@ -52,7 +52,42 @@ torchrun --nnodes 1 --nproc_per_node 8 inference_r2av.py --config-file dreamid_o
 ```
 Before running multi-GPU inference, please open `dreamid_omni/configs/inference/inference_r2av.yaml` and set sp_size: 8
 
+#### vllm-omni inference
 
+##### Install vLLM-Omni
+Please follow the official installation guide:
+https://docs.vllm.ai/projects/vllm-omni/en/latest/getting_started/installation/
+
+##### Download DreamID-Omni Weights
+Download the model weights and configuration files:
+```sh
+cd vllm-omni/examples/offline_inference
+python download_dreamid_omni.py \
+    --output-dir weight-dir
+```
+After downloading, the directory `weight-dir` will contain the DreamID-Omni model weights and the required configuration files for inference.
+##### Run Inference
+###### Single-GPU Inference
+``` sh
+python x_to_video_audio.py \
+    --model weight-dir \
+    --prompt "<your_prompt>" \
+    --image-path <path_to_image1> <path_to_image2> \
+    --audio-path <path_to_audio1> <path_to_audio2> \
+    --num-inference-steps 45
+```
+More configurable parameters can be found in [x_to_video_audio.md](https://github.com/vllm-project/vllm-omni/blob/main/docs/user_guide/examples/offline_inference/x_to_video_audio.md).
+###### inference with multi-GPU
+``` sh
+python x_to_video_audio.py \
+    --model weight-dir \
+    --prompt "<your_prompt>" \
+    --image-path <path_to_image1> <path_to_image2> \
+    --audio-path <path_to_audio1> <path_to_audio2> \
+    --num-inference-steps 45
+    --cfg-parallel-size 2
+```
+More acceleration features will be introduced in future releases.
 
 ## 🎨 How to Create 
 Our prompts use the following special tags to control characters and speech:
