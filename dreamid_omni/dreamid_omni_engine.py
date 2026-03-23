@@ -94,6 +94,7 @@ class DreamIDOmniEngine:
         load_fusion_checkpoint(model, checkpoint_path=checkpoint_path, from_meta=meta_init)
 
         if meta_init:
+            model = model.to(dtype=target_dtype)
             model = model.to(device=device if not self.cpu_offload else "cpu").eval()
             model.set_rope_params()
         self.model = model
