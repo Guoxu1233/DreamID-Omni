@@ -55,7 +55,7 @@ def main(output_dir: str):
         ]
     )
 
-    dreamid_omni_dir = os.path.join(output_dir, "DreamI_Omni")
+    dreamid_omni_dir = os.path.join(output_dir, "DreamID_Omni")
 
     timed_download(
         repo_id="XuGuo699/DreamID-Omni",
