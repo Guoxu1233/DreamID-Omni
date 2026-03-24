@@ -2,8 +2,8 @@ opencv-python>=4.9.0.80
 
 diffusers==0.35.2
 transformers==4.51.3
-# tokenizers>=0.20.3
-# accelerate>=1.1.1
+tokenizers>=0.20.3
+accelerate>=1.1.1
 
 tqdm
 imageio[ffmpeg]
