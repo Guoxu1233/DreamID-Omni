@@ -1,6 +1,6 @@
 
 ckpt_dir: ./ckpts
-output_dir: ./result/dreamid_omni_new_rope
+output_dir: ./result/dreamid_omni
 sample_steps: 50
 solver_name: unipc
 model_name: "dreamid_omni" 
