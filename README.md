@@ -17,6 +17,7 @@
 <p>
 
 ## 🔥 News
+- [03/23/2026] 🔥 Thanks benjiyaya for supporting [FP8](https://github.com/benjiyaya/ComfyUI_Dreamid-Omni) inference.
 - [03/18/2026] 🔥 Thanks HM-RunningHub for supporting [ComfyUI](https://github.com/HM-RunningHub/ComfyUI_RH_Dreamid-Omni).
 - [03/13/2026] 🔥 Day 0 support from [vllm-omni](https://github.com/vllm-project/vllm-omni), with heartfelt gratitude to the vLLM-omni Team for their support!
 - [03/13/2026] 🔥 Our v1 version [code](https://github.com/Guoxu1233/DreamID-Omni) for R2AV is released!
