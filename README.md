@@ -17,7 +17,7 @@
 <p>
 
 
-## Todo List
+## 📑 Todo List
 
 - [x] Release the technical report
 - [x] Release the R2AV model trained with In-pair Reconstruction and Cross-pair Disentanglement
