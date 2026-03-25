@@ -16,6 +16,14 @@
 <img src="assets/teaser.png" width=95%>
 <p>
 
+
+## Todo List
+
+- [x] Release the technical report
+- [x] Release the R2AV model trained with In-pair Reconstruction and Cross-pair Disentanglement
+- [ ] Release IDBench-Omni
+- [ ] Release the final model after Omni-Task Fine-tuning for R2AV, RV2AV, and RA2V
+
 ## 🔥 News
 - [03/23/2026] 🔥 Thanks benjiyaya for supporting [FP8](https://github.com/benjiyaya/ComfyUI_Dreamid-Omni) inference.
 - [03/18/2026] 🔥 Thanks HM-RunningHub for supporting [ComfyUI](https://github.com/HM-RunningHub/ComfyUI_RH_Dreamid-Omni).
