@@ -26,6 +26,7 @@
 - [ ] Release the final model after Omni-Task Fine-tuning for R2AV, RV2AV, and RA2V
 
 ## 🔥 News
+- [05/1/2026]  [IDBench-Omni](https://huggingface.co/datasets/XuGuo699/IDBench-Omni) is released!
 - [03/24/2026] 🔥 Thanks [cronos3k](https://github.com/cronos3k/dreamid-omni-consumer-gpu) for enabling DreamID-Omni inference on multiple consumer 24GB GPUs.
 - [03/23/2026] 🔥 Thanks benjiyaya for supporting [FP8](https://github.com/benjiyaya/ComfyUI_Dreamid-Omni) inference.
 - [03/18/2026] 🔥 Thanks HM-RunningHub for supporting [ComfyUI](https://github.com/HM-RunningHub/ComfyUI_RH_Dreamid-Omni).
